@@ -32,7 +32,7 @@ onDevtoolsClientConnected(async (client) => {
   })
 
   if (!component.value || !components.value.find(c => c.slug === component.value?.slug)) {
-    component.value = components.value.find(comp => comp.slug === 'button')
+    component.value = components.value.find(comp => comp.slug === 'accordion')
   }
 
   state.value.props = components.value?.reduce((acc, comp) => {
